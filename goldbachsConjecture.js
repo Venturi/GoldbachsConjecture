@@ -41,7 +41,7 @@ function isPrime(n) {
     return false;
   }
 
-  for (var i = 2; i < n; i++) {
+  for (var i = 2; i <= Math.sqrt(n); i++) {
 
     if (n % i === 0) {
       return false;
